@@ -1,0 +1,11 @@
+.form-group mat-form-field {
+  width: 83%;
+}
+
+.form-group .row .col-md-4 mat-form-field{
+  width: 100%;
+}
+
+.row .col-md-5 mat-form-field{
+    width: 100%;
+}

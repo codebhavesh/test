@@ -1,0 +1,211 @@
+[
+    
+      {
+        "id": 1,
+        "title": "Apple iPad",
+        "description": "Bionic chip, 27.69 cm (10.9″) Liquid Retina Display, 64GB, Wi-Fi 6",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "ipad",
+        "image" : "https://m.media-amazon.com/images/I/61oo+mrbI2L._SL1500_.jpg"
+        
+      },
+      {
+        "id": 2,
+        "title": "iPhone 12",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 449,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartphones",
+        "image" : "https://i5.walmartimages.com/asr/2a436aab-ac08-4bea-bf89-6411d2f29ce4_1.60a371ed5f47a9c68b5b5b737b90f70d.jpeg"
+        
+      },
+      {
+        "id": 3,
+        "title": "Apple Watch SE (2nd Gen)",
+        "description": "Smart Watch w/Starlight Aluminium Case & Starllight Sport Band.",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartwatch",
+        "image" : "https://m.media-amazon.com/images/I/71XBcl6bNjL._SL1500_.jpg"
+        
+      },
+      {
+        "id": 4,
+        "title": "iPhone 15",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartphones",
+        "image" : "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5789/5789725cv11d.jpg"
+        
+      },
+      {
+        "id": 5,
+        "title": "iPhone Charger Original",
+        "description": "5GCompatible With iPhone 15, iPhone 15 Plus, iPhone 15",
+        "price": 349,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "charger",
+        "image" : "https://images-na.ssl-images-amazon.com/images/I/61DMGqWEK8L._AC_SL1500_.jpg"
+        
+      },
+      {
+        "id": 6,
+        "title": "20W Original Charger",
+        "description": "Compatible with iPhone 14/14 Plus Pro Max/13 Pro Series PD Fast Type C",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "",
+        "image" : "https://m.media-amazon.com/images/I/51EbtReAYFL._SL1032_.jpg"
+        
+      },
+      {
+        "id": 7,
+        "title": "UNIGEN 20W Charger",
+        "description": "Charging Data Sync for iPhone 14 13 12 11 Xr X 8 iPad",
+        "price": 449,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "charger",
+        "image" : "https://m.media-amazon.com/images/I/51P6+-V6sDL._SL1319_.jpg"
+        
+      },
+      {
+        "id": 8,
+        "title": "Apple 12W Adapter",
+        "description": "Apple Watch Compatability: Apple Watch Series 6, Apple Watch SE",
+        "price": 249,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "charger",
+        "image" : "https://m.media-amazon.com/images/I/41l6ANEUyPL._SL1144_.jpg"
+        
+      },
+      {
+        "id": 9,
+        "title": "iPhone 14",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartphones",
+        "image" : "https://i5.walmartimages.com/asr/bc676221-0b90-490c-8bc5-c1b08b5c48ae_1.5b3d4a5fba8e6d98a830ee521521fc5b.jpeg"
+        
+      },
+      {
+        "id": 10,
+        "title": "Apple Watch Series 9 ",
+        "description": "Smartwatch with Midnight Aluminum Case with Midnight Sport Band M/L",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartwatch",
+        "image" : "https://m.media-amazon.com/images/I/7162zT9RKRL._SL1500_.jpg"
+        
+      },
+      {
+        "id": 11,
+        "title": "Apple Watch Ultra 2",
+        "description": "Smartwatch with Rugged Titanium Case & Orange Ocean Band One Size.",
+        "price": 649,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartwatch",
+        "image" : "https://m.media-amazon.com/images/I/71JNSeO-nbL._SL1500_.jpg"
+        
+      },
+      {
+        "id": 12,
+        "title": "Apple Watch SE",
+        "description": "Smart Watch w/Silver Aluminium Case & White Sport Band",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartwatch",
+        "image" : "https://m.media-amazon.com/images/I/71RAk7Bn2ZL._SL1500_.jpg"
+        
+      },
+      {
+        "id": 13,
+        "title": "Apple iPad",
+        "description": "Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "ipad",
+        "image" : "https://m.media-amazon.com/images/I/61uA2UVnYWL._SL1500_.jpg"
+        
+      },
+      {
+        "id": 14,
+        "title": "Apple iPad Pro 11",
+        "description": "Liquid Retina Display, 256GB, 12MP front/12MP and 10MP Back Cameras",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "ipad",
+        "image" : "https://m.media-amazon.com/images/I/81gC7frRJyL._SL1500_.jpg"
+        
+      },
+      {
+        "id": 15,
+        "title": "Apple iPad Air",
+        "description": "Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "ipad",
+        "image" : "https://m.media-amazon.com/images/I/61XZQXFQeVL._SL1500_.jpg"
+        
+      },
+      {
+        "id": 16,
+        "title": "iPhone 9",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartphones",
+        "image" : "http://www.jegsons.com/multiple_uploader/images/27/271850-img.jpg"
+        
+      }
+]

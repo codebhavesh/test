@@ -1,0 +1,36 @@
+<!-- <h2>{{id}}</h2> -->
+
+<div class="container" *ngIf="getProduct">
+    <h4 class="mt-5">Product Details</h4>
+    <button class="btn btn-light mb-5 text-center" (click)="toHomePage()"><i class='fas fa-long-arrow-alt-left' style='font-size:15px;color:black'></i> Back</button>
+    <div class="row featurette">
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src={{getProduct.image}} alt="" width="500" height="500">
+          </div>
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">{{getProduct.title}}</h2>
+          <p class="lead mb-2">{{getProduct.description}}</p>
+          <p class="lead"><span class="badge bg-success">{{getProduct.rating}}<i class='fas fa-star ms-1' style="color: white;font-size: 15px;"></i>
+          </span> <span class="fs-6 fw-light ms-3">60,000 Ratings & 4,355 Reviews</span>
+          </p>
+          <p class="lead mb-0">$ {{getProduct.price}} <span class="fs-6">{{getProduct.discountPercentage}}% Off</span><span class="fs-6 ms-3">Brand : {{getProduct.brand}}</span></p>
+          <div class="card-body mt-4">
+            <h5>Product Description : </h5>
+            <h6>4nm Snapdragon Processor</h6>
+            <p class="lh-base">This Poco M6 Pro 5G smartphone is powered by a powerful 4nm Snapdragon 4 Gen 2 processor. The 4nm fabrication process of this SoC is very fast and smooth, so you can access multiple apps swiftly.</p>
+  
+            <h6>Turbo RAM for Multitasking</h6>
+            <p class="lh-base">You can now multitask with ease with the Turbo RAM feature available in this phone. With the Turbo RAM feature, optimising is quick and easy. You get up to 12 GB RAM (6 GB LPDDR4X + 6 GB Virtual) on the top variant of this phone.</p>
+          </div>
+
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-warning btn-lg px-3 me-sm-3" (click)="onAddToCart(getProduct)" fdprocessedid="v5gi1f"><i class='fas fa-shopping-cart me-2' style='font-size:20px'></i>Go To Cart</button>
+            <button type="button" class="btn btn-warning btn-lg px-3" fdprocessedid="yjyml"><i class='fas fa-dollar-sign me-2' style='font-size:20px'></i>
+                Buy Now</button>
+          </div>
+          
+        </div>
+        
+      </div>
+    
+</div>

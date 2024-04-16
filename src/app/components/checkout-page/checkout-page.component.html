@@ -1,0 +1,168 @@
+<div class="container pb-5">
+    <main>
+      <div class="pt-3 text-center">
+        <h2>Checkout form</h2>
+        <p class="lead">One step to get your product.</p>
+      </div>
+      <button class="btn btn-light mb-5 text-center" (click)="toHomePage()"><i class='fas fa-long-arrow-alt-left' style='font-size:15px;color:black'></i> Back to cart</button>
+
+  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">{{checkoutLength}}</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm" *ngFor="let item of checkoutItems">
+              <div>
+                <img width="150px" height="150px" src="{{item.image}}"  alt="">
+                <h6 class="my-2">{{item.title}}</h6>
+                <!-- <small class="text-muted">B</small> -->
+              </div>
+              <span class="text-muted">Price : ${{item.price}}</span>
+            </li>
+            
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>${{checkoutAmount}}</strong>
+            </li>
+          </ul>
+  
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Billing address</h4>
+          <form [formGroup]="customerDetails" (ngSubmit)="orderCnf()">
+            <div class="row g-3">
+              <div class="form-group col-sm-12">
+                <mat-form-field>
+                  <mat-label>Your Name</mat-label>
+                  <input matInput required formControlName="username">
+                  <mat-hint align="start" *ngIf='!customerDetails.get("username").valid && customerDetails.get("username").touched'>Please enter the valid name.</mat-hint>
+                </mat-form-field>
+              </div>
+
+              <div class="form-group col-12">
+  
+                <mat-form-field>
+                  <mat-label>Email</mat-label>
+                  <input matInput required formControlName="email">
+                  <mat-hint align="start" *ngIf='!customerDetails.get("email").valid && customerDetails.get("email").touched'>Please enter the valid email.</mat-hint>
+                </mat-form-field>
+                
+              </div>
+
+              <div class="form-group col-12">
+                <mat-form-field>
+                  <mat-label>Phone Number</mat-label>
+                  <input matInput required formControlName="phone" type="number">
+                  <mat-hint align="start" *ngIf='!customerDetails.get("phone").valid && customerDetails.get("phone").touched'>Please enter the valid Phone number.</mat-hint>
+                </mat-form-field>
+        
+              </div>
+
+              <div class="form-group col-12">
+                <mat-form-field>
+                  <mat-label>Address</mat-label>
+                  <input matInput required formControlName="address">
+                  <mat-hint align="start" *ngIf='!customerDetails.get("address").valid && customerDetails.get("address").touched'>Please enter your address.</mat-hint>
+        
+                </mat-form-field>
+                
+              </div>
+
+              <div class="form-group demo col-10">
+                <div class="row">
+                  <div class="col-md-4">
+                    <mat-form-field>
+                      <mat-label>State</mat-label>
+                      <input matInput required formControlName="state">
+                      <mat-hint align="start" *ngIf='!customerDetails.get("state").valid && customerDetails.get("state").touched'>Please enter your state.</mat-hint>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-4">
+                    <mat-form-field>
+                      <mat-label>Country</mat-label>
+                      <input matInput required formControlName="country">
+                      <mat-hint align="start" *ngIf='!customerDetails.get("country").valid && customerDetails.get("country").touched'>Please enter your country.</mat-hint>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-4">
+                    <mat-form-field>
+                      <mat-label>Zip Code</mat-label>
+                      <input matInput required formControlName="zipcode" type="number">
+                      <mat-hint align="start" *ngIf='!customerDetails.get("zipcode").valid && customerDetails.get("zipcode").touched'>Please enter the valid zip code.</mat-hint>
+                    </mat-form-field>
+                  </div>
+                </div>
+        
+              </div>
+
+              <hr class="my-4">
+              <h4 class="mb-3">Payment</h4>
+              <mat-radio-group formControlName="paymentMethod">
+                <div class="form-check d-inline">
+                  <mat-radio-button  value="credit" type="radio">Credit card</mat-radio-button> 
+                </div>
+                <div class="form-check d-inline">
+                  <mat-radio-button  value="debit" type="radio">Debit card</mat-radio-button>
+                </div>
+                <div class="form-check d-inline">
+                  <mat-radio-button  value="paypal" type="radio">PayPal</mat-radio-button>
+  
+                </div>
+              </mat-radio-group>
+              
+
+              <div class="row gy-3">
+                <div class="col-md-5">
+                  <mat-form-field>
+                    <mat-label>Name on Card</mat-label>
+                    <input matInput required formControlName="ccName" type="text">
+                    <mat-hint class="text-muted">Full name as displayed on card</mat-hint>
+                    <mat-hint align="start" *ngIf='!customerDetails.get("ccName").valid && customerDetails.get("ccName").touched'>Name on card is required.</mat-hint>
+                  </mat-form-field>
+                </div>
+    
+                <div class="col-md-5">
+                  <mat-form-field>
+                    <mat-label>Credit card number</mat-label>
+                    <input matInput required formControlName="ccNumber" type="number">
+                    <mat-hint align="start" *ngIf='!customerDetails.get("ccNumber").valid && customerDetails.get("ccNumber").touched'>Credit card number is required.</mat-hint>
+                  </mat-form-field>
+                </div>
+              <div class="row gy-3">
+                <div class="col-md-4">
+                  <mat-form-field>
+                    <mat-label>Expiration</mat-label>
+                    <input matInput required formControlName="ccExpiration" type="date">
+                    <mat-hint align="start" *ngIf='!customerDetails.get("ccExpiration").valid && customerDetails.get("ccExpiration").touched'>Expiration date required.</mat-hint>
+                  </mat-form-field>
+                </div>
+    
+                <div class="col-md-4">
+                  <mat-form-field>
+                    <mat-label>CVV</mat-label>
+                    <input matInput required formControlName="ccv" type="number">
+                    <mat-hint align="start" *ngIf='!customerDetails.get("ccv").valid && customerDetails.get("ccv").touched'>Security code required.</mat-hint>
+                  </mat-form-field>
+                </div>
+              </div>
+                
+              </div>
+              <hr>
+              <div class="form-group text-center">
+                <button mat-raised-button color="primary" type="submit" [disabled]="!customerDetails.valid">Continue to Checkout</button>            
+              </div>
+  
+            </div>
+            
+          </form>
+
+          <!-- [disabled]="!customerDetails.valid" -->
+          
+        </div>
+      </div>
+    </main>
+
+  </div>

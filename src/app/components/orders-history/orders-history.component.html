@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <h3 class="my-4">Orders</h3>
+    </div>
+    <div class="row" *ngIf="ordersData; else elseBlock">
+        <div class="col-md-12">
+          <button class="btn btn-light mb-5 text-center" (click)="onReturnToPage()"><i class='fas fa-long-arrow-alt-left' style='font-size:15px;color:black'></i> Back </button>
+
+        <!-- <button class="btn btn-warning float-start" style="width: 200px;" (click)="onReturnToPage()">Continue shopping</button> -->
+
+            <table class="table">
+               <tbody>
+                <tr *ngFor="let item of ordersData; let i = index">
+                    <td><img width="150px" height="150px" src="{{item.image}}"  alt=""></td>
+                    <td>
+                        <div class="card border-0">
+                            <div class="card-body">
+                              <h5 class="card-title">{{item.title}}</h5>
+                              <p class="card-text mb-1">{{item.description}}</p>
+                              <p class="card-text mb-1">Brand : {{item.brand}}</p>
+                              <p class="card-text">Price : $ {{item.price}}</p>
+
+                              <!-- <button class="btn btn-danger" (click)="onRemoveItem(i)">Remove</button> -->
+                            </div>
+                          </div>
+                    </td>
+                    <td>
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-text">Delivered to :</h5>
+                                <p class="card-text mb-1">{{billingData.username}}</p>
+                                <p class="card-text mb-1">{{billingData.address}} {{billingData.state}}</p>
+                                 
+                            </div>
+                          </div>
+                    </td>
+                  </tr>
+                  
+               </tbody>
+            </table>
+            
+        </div>
+    </div>
+
+    <!-- EMPTY -->
+    <ng-template #elseBlock>
+        <div class="row">
+            <div class="px-4 py-5 my-5 text-center">
+                <i class='fas fa-shopping-cart' style='font-size:100px;color: rgb(237, 154, 20);'></i>
+                <!-- <img class="d-block mx-auto mb-4" src="https://www.kindpng.com/picc/m/289-2892204_your-cart-is-empty-empty-cart-icon-png.png" alt="" width="72" height="57"> -->
+                <h1 class="display-5 fw-bold mt-5">No Purchase History</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-4">Check back after your next shopping trip!</p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-lg px-4 gap-3" fdprocessedid="xe1asw" style="background-color:rgb(237, 154, 20) ;" (click)="onReturnToPage()">Return To Shop</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </ng-template>
+    
+    
+</div>
+
